@@ -1,7 +1,11 @@
 seleniumgluecode\Test.class
 pom\RegisterPage.class
 runner\Testrunner.class
-seleniumgluecode\Testbase.class
-pom\BasePage.class
+pom\AccountsOverviewPage.class
 seleniumgluecode\Hooks.class
 pom\HomePage.class
+pom\OpenNewAccount.class
+seleniumgluecode\Testbase.class
+api\request.class
+pom\BasePage.class
+pom\BasePage$SelectionType.class

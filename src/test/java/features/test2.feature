@@ -1,6 +1,10 @@
+@allure.label.epic:BanckTest
+@allure.label.feature:Creacion_Cuenta_Tranferencia
 @CrearCuenta
+
 Feature: Abrir nueva cuenta bancaria
 
+@smoke
 Scenario: Crear una nueva cuenta de un usuaro que ya realizó registro previo
     Given El usuario ingresa username y password
     And El usuario hace click en el boton Login
@@ -11,6 +15,7 @@ Scenario: Crear una nueva cuenta de un usuaro que ya realizó registro previo
     Then El usuario visualiza en la funcionalidad el mensaje Account Opened
     And El usuario visualiza en la funcionalidad el numero de cuenta
 
+@transferencia
 Scenario: Transferencia de fondo de cuentas
     Given El usuario ingresa username y password
     And El usuario hace click en el boton Login

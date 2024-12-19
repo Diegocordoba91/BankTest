@@ -1,10 +1,13 @@
-@CrearUsuario
+@allure.label.epic:BanckTest
+@allure.label.feature:Creacion_Usuario
+
 Feature: Creacion de nuevo  usuario en el banco
     Como usuario del banco
     Quiero crear una cuenta nueva
     Para poder gestionar mis finanzas
 
-//Scenario: Crear una nueva cuenta para el usuario del banco
+@allure.story:crear_cuenta_nueva
+Scenario: Crear una nueva cuenta para el usuario del banco
     Given El usuario se encuentra en la pagina principal del banco
     When  El usuario hace clic en el boton register en la pagina principal
     Then El usuario debe ser redirigido a la pantalla de creación de cuenta
@@ -14,7 +17,8 @@ Feature: Creacion de nuevo  usuario en el banco
     And El usuario hace click en el boton registrar
     And El usuario visualiza en pantalla el mensaje "You are now logged in"
 
-//Scenario: Ingresar con un usuario con una cuenta creada
+@allure.story:Ingresar_con_un_usuario_con_una_cuenta_creada
+Scenario: Ingresar con un usuario con una cuenta creada
     Given El usuario se encuentra en la pagina principal del banco
     And  El usuario hace clic en el boton register en la pagina principal
     And El usuario debe ser redirigido a la pantalla de creación de cuenta
@@ -27,7 +31,7 @@ Feature: Creacion de nuevo  usuario en el banco
     And El usuario hace click en el boton Login
     And El usuario visualiza en pantalla el mensaje Welcome
 
-//Scenario: El usuario no ingresa información a los campo e intenta crear una nueva cuenta
+Scenario: El usuario no ingresa información a los campo e intenta crear una nueva cuenta
     Given El usuario se encuentra en la pagina principal del banco
     And  El usuario hace clic en el boton register en la pagina principal
     And El usuario debe ser redirigido a la pantalla de creación de cuenta

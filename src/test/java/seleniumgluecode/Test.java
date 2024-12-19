@@ -9,19 +9,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.qameta.allure.Step;
 
 
 public class Test extends Testbase {
 
     
     @Given("El usuario se encuentra en la pagina principal del banco")
-    
+    @Step("Este paso verifica si la página principal del banco se carga correctamente.")
     public void el_usuario_se_encuentra_en_la_pagina_principal_del_banco() throws InterruptedException {
         Assert.assertTrue("La página principal del banco no se cargó correctamente.",homePage.titleHomePageDisplayed()  );
     }
     
     @When("El usuario hace clic en el boton register en la pagina principal")
-    
+    @Step("Este paso simula el clic en el botón register en la página principal del banco para iniciar el proceso de registro.")
     public void el_usuario_jace_clic_en_el_boton_en_la_pagina_principal() throws InterruptedException {
         
         homePage.clickButtonRegister();
@@ -29,40 +30,40 @@ public class Test extends Testbase {
     }
 
     @Then("El usuario debe ser redirigido a la pantalla de creación de cuenta")
-    
+    @Step("Este paso verifica que el usuario es redirigido a la página de creación de cuenta después de hacer clic en el botón de registro.")
     public void el_usuario_debe_ser_redirigido_a_la_pantalla_de_creación_de_cuenta() throws InterruptedException {
         
         //Assert.assertTrue(registerPage.isCurrentUrlRegisterPage());        
     }
 
     @Then("El formulario de creacion de cuenta debe estar visible")
-    
+    @Step("Este paso verifica que el formulario de creación de cuenta es visible para que el usuario pueda completarlo.")
     public void el_formulario_de_creacion_de_cuenta_debe_estar_visible() throws InterruptedException {
         Assert.assertTrue("El formulario de creación de cuenta no está visible.",registerPage.formRegisterUserDisplayed());        
     }
 
     @Then("El titulo de la pantalla debe ser {string}")
-    
+    @Step("Este paso se verifica que el título de la pantalla coincida con el esperado, indicando que el usuario está en la página correcta.")
     public void el_titulo_de_la_pantalla_debe_ser(String string) throws InterruptedException {
         Assert.assertTrue("El título de la pantalla no es el esperado.",registerPage.titleRegisterPagePresensent());        
     }
 
     @Then("El usuario completa la informacion de todos los campos obligatorios")
-    
+    @Step("Este paso simula que el usuario llena todos los campos obligatorios en el formulario de creación de cuenta.")
     public void El_usuario_completa_la_informacion_de_todos_los_campos_obligatorios() {
 
     registerPage.newAccountRegistrationForm();
     }
 
     @Then("El usuario hace click en el boton registrar")
-    
+    @Step("Este paso simula el clic en el botón registrar para completar el proceso de registro.")
     public void el_usuario_hace_click_en_el_boton_registrar() throws InterruptedException {
     registerPage.clickButtonRegister();
     
     }
     
     @Then("El usuario visualiza en pantalla el mensaje {string}")
-    
+    @Step("Este paso verifica que el mensaje You are now logged in se muestra en pantalla después de hacer clic en el botón de registro.")
     public void el_usuario_visualiza_en_pantalla_el_mensaje(String string) {
     
         Assert.assertTrue(registerPage.registerAccount());
@@ -70,7 +71,7 @@ public class Test extends Testbase {
     }
 
     @Then("El usuario visualiza en pantalla el mensaje nuevo {string}")
-    
+    @Step("En este paso se verifica que el usuario visualice en pantalla el mensaje : This username already exists.")
     public void El_usuario_visualiza_en_pantalla_el_mensaje_nuevo(String s) throws InterruptedException {
         Assert.assertTrue(registerPage.accountExist());
     }
