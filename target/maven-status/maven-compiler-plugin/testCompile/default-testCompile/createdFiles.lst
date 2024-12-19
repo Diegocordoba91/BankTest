@@ -1,0 +1,7 @@
+seleniumgluecode\Test.class
+pom\RegisterPage.class
+runner\Testrunner.class
+seleniumgluecode\Testbase.class
+pom\BasePage.class
+seleniumgluecode\Hooks.class
+pom\HomePage.class
