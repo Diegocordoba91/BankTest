@@ -65,7 +65,8 @@ public class Test extends Testbase {
     @Then("El usuario visualiza en pantalla el mensaje {string}")
     @Step("Este paso verifica que el mensaje You are now logged in se muestra en pantalla después de hacer clic en el botón de registro.")
     public void el_usuario_visualiza_en_pantalla_el_mensaje(String string) {
-    
+        
+        
         Assert.assertTrue(registerPage.registerAccount());
         
     }

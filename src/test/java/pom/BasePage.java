@@ -15,6 +15,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.example.utils.ScreenshotUtil;
+
 public class BasePage {
 
     public WebDriver driver;
@@ -140,6 +142,11 @@ public class BasePage {
         }
 
         
+    }
+
+    protected void takeScreenshot(String fileName){
+
+        ScreenshotUtil.takeScreenshot(driver, fileName);
     }
 
 
