@@ -106,6 +106,9 @@ public class RegisterPage extends BasePage{
     }
 
     public boolean accountExist() throws InterruptedException{
+
+        if(!this.elementDispaleyed(messageErrorUserExist))
+            this.takeScreenshot("errorAccesoCuentaUsuario");
         return this.elementDispaleyed(messageErrorUserExist);
     }
 
@@ -120,6 +123,14 @@ public class RegisterPage extends BasePage{
     }
 
     public boolean welcomeMessage() throws InterruptedException{
+        if (!this.elementDispaleyed(welcome)) {
+            System.out.println("Elemento no esta visible tomando captura........");
+            this.takeScreenshot("errorAccesoCuentaCreada");
+
+        } else {
+            System.out.println("Elemento visible no se toma captura de pantalla");
+            
+        }
         return this.elementDispaleyed(welcome);
     }
 

@@ -1,4 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: runner.Testrunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 63.71 s -- in runner.Testrunner
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 102.1 s <<< FAILURE! -- in runner.Testrunner
+Creacion de nuevo  usuario en el banco.Crear una nueva cuenta para el usuario del banco -- Time elapsed: 28.82 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at seleniumgluecode.Test.el_usuario_visualiza_en_pantalla_el_mensaje(Test.java:70)
+	at ✽.El usuario visualiza en pantalla el mensaje "You are now logged in"(file:///C:/Users/diego_dlc7/Documents/2.%20Automation/banktestqaautomation/src/test/java/features/test.feature:18)
+
+Creacion de nuevo  usuario en el banco.Ingresar con un usuario con una cuenta creada -- Time elapsed: 23.19 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at seleniumgluecode.Test.El_usuario_visualiza_en_pantalla_el_mensaje_Welcome(Test.java:95)
+	at ✽.El usuario visualiza en pantalla el mensaje Welcome(file:///C:/Users/diego_dlc7/Documents/2.%20Automation/banktestqaautomation/src/test/java/features/test.feature:32)
+
+Abrir nueva cuenta bancaria.Crear una nueva cuenta de un usuaro que ya realizó registro previo -- Time elapsed: 16.60 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at seleniumgluecode.Test.El_usuario_visualiza_en_la_funcionalidad_el_mensaje_Open_New_Account(Test.java:127)
+	at ✽.El usuario visualiza en la funcionalidad el mensaje Open New Account(file:///C:/Users/diego_dlc7/Documents/2.%20Automation/banktestqaautomation/src/test/java/features/test2.feature:12)
+
+Abrir nueva cuenta bancaria.Transferencia de fondo de cuentas -- Time elapsed: 17.83 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at seleniumgluecode.Test.el_usuario_visualiza_en_pantalla_el_mensaje_Balance_includes_deposits_that_may_be_subject_to_holds(Test.java:164)
+	at ✽.el usuario visualiza en pantalla el mensaje Balance includes deposits that may be subject to holds(file:///C:/Users/diego_dlc7/Documents/2.%20Automation/banktestqaautomation/src/test/java/features/test2.feature:23)
+
