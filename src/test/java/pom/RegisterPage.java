@@ -107,8 +107,6 @@ public class RegisterPage extends BasePage{
 
     public boolean accountExist() throws InterruptedException{
 
-        if(!this.elementDispaleyed(messageErrorUserExist))
-            this.takeScreenshot("errorAccesoCuentaUsuario");
         return this.elementDispaleyed(messageErrorUserExist);
     }
 
