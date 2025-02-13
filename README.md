@@ -4,13 +4,13 @@ Bank Test es un proyecto diseñado para llevar la calidad del software bancario 
 
 🛠️ Tecnologías que hacen magia ✨:
 
-	•	Selenium 4.11.0 🖥️: El motor que impulsa las pruebas de UI, asegurando que la interfaz de usuario funcione a la perfección.
-	•	Cucumber 7.0.0 📜: Donde el desarrollo basado en comportamiento (BDD) toma vida. Escenarios escritos en lenguaje natural que aseguran que todos los involucrados hablen el mismo idioma.
-	•	Allure 2.24.0 📊: Informes visuales interactivos que transforman los resultados de las pruebas en historias claras y fáciles de entender.
-	•	Rest Assured 5.3.0 🔌: Realiza pruebas robustas para APIs RESTful, garantizando que la comunicación del backend sea tan confiable como la de la interfaz de usuario.
-	•	JUnit 4.13.2 🧪: Ejecuta las pruebas con la fiabilidad y precisión que solo JUnit sabe ofrecer.
-	•	AspectJ 1.9.20.1 🧩: Con el poder de la programación orientada a aspectos (AOP), mejora la funcionalidad del código de manera eficiente y elegante.
-	•	Jenkins ⚙️: El orquestador detrás de la automatización, ejecutando pruebas y asegurando una integración continua sin fricciones.
+	•Selenium 4.11.0 🖥️: El motor que impulsa las pruebas de UI, asegurando que la interfaz de usuario funcione a la perfección.
+	•Cucumber 7.0.0 📜: Donde el desarrollo basado en comportamiento (BDD) toma vida. Escenarios escritos en lenguaje natural que aseguran que todos los involucrados hablen el mismo idioma.
+	•Allure 2.24.0 📊: Informes visuales interactivos que transforman los resultados de las pruebas en historias claras y fáciles de entender.
+	•Rest Assured 5.3.0 🔌: Realiza pruebas robustas para APIs RESTful, garantizando que la comunicación del backend sea tan confiable como la de la interfaz de usuario.
+	•JUnit 4.13.2 🧪: Ejecuta las pruebas con la fiabilidad y precisión que solo JUnit sabe ofrecer.
+	•AspectJ 1.9.20.1 🧩: Con el poder de la programación orientada a aspectos (AOP), mejora la funcionalidad del código de manera eficiente y elegante.
+	•Jenkins ⚙️: El orquestador detrás de la automatización, ejecutando pruebas y asegurando una integración continua sin fricciones.
 
 📈 ¿Qué puedes esperar de este proyecto? 🧐
 
